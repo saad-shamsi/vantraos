@@ -1,18 +1,23 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vantra OS — Many Problems. One Profound Solution.</title>
-  <meta name="description" content="The purpose-built operating system for businesses that deliver through vendors. Live order-to-ledger orchestration, automated vendor sheets, and real-time event profitability.">
+  <title>Vantra OS â€” Your Vendors Delivered. Your Profit Didn't.</title>
+  <meta name="description" content="Vantra OS is the purpose-built operating system for vendor-reliant businesses. Stop losing margin to WhatsApp chaos and late paper bills. Unified quotations, automated vendor sheets, and live event profitability.">
+  <meta name="keywords" content="Vantra OS, catering management software, vendor coordination system, event ERP, vendor sheet engine, business operating system">
+  <meta property="og:title" content="Vantra OS â€” Your Vendors Delivered. Your Profit Didn't.">
+  <meta property="og:description" content="Stop guessing if your last event was profitable. Vantra OS unifies every vendor, every rupee, every job into one operating system.">
+  <meta property="og:url" content="https://vantraos.com">
+  <meta property="og:type" content="website">
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23F97316'/><path d='M28 32L50 68L72 32' stroke='white' stroke-width='14' stroke-linecap='round' stroke-linejoin='round'/></svg>">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Plus Jakarta Sans + Outfit + JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -21,307 +26,483 @@
 </head>
 <body>
 
-  <!-- Background Ambience & Lighting -->
-  <div class="ambient-glow ambient-top"></div>
-  <div class="ambient-glow ambient-accent"></div>
-  <div class="grid-pattern-overlay"></div>
+  <!-- Ambient Radiant Glow Backgrounds -->
+  <div class="ambient-glow ambient-hero"></div>
+  <div class="ambient-glow ambient-right"></div>
+  <div class="ambient-grid"></div>
 
-  <!-- Announcement Bar -->
+  <!-- Announcement Ticker Bar -->
   <div class="announcement-bar">
-    <div class="container announcement-content">
-      <span class="badge-pill-pulse">
-        <span class="pulse-dot"></span> Live in Karachi
-      </span>
+    <div class="container announcement-inner">
+      <div class="announcement-pill">
+        <span class="live-dot"></span>
+        <span>SYSTEM LIVE</span>
+      </div>
       <p class="announcement-text">
-        <strong>Vantra OS 2.4 is Live:</strong> Powering real-world catering operations with 850+ automated safety tests.
+        <strong>Vantra OS 2.4:</strong> Powering real catering operations Â· 853 automated tests Â· ACID-safe double-entry ledger.
       </p>
-      <a href="https://catering-system-gamma.vercel.app/" target="_blank" rel="noopener noreferrer" class="announcement-link">
-        Launch Live System Demo <i data-lucide="arrow-up-right"></i>
+      <a href="https://catering-system-gamma.vercel.app/" target="_blank" rel="noopener noreferrer" class="announcement-cta">
+        <span>Launch Live Demo System</span>
+        <i data-lucide="arrow-up-right"></i>
       </a>
     </div>
   </div>
 
-  <!-- Main Navigation -->
+  <!-- Main Navigation Header -->
   <header class="main-header" id="navbar">
-    <div class="container nav-container">
-      <a href="#hero" class="brand-logo">
+    <div class="container nav-wrapper">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Vantra OS Home">
         <div class="logo-mark">
           <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="40" height="40" rx="10" fill="url(#brand-grad)"/>
+            <rect width="40" height="40" rx="10" fill="url(#brand-gradient-nav)"/>
             <path d="M11 13L20 28L29 13" stroke="white" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
             <defs>
-              <linearGradient id="brand-grad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#FF6B2B"/>
+              <linearGradient id="brand-gradient-nav" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FF5722"/>
                 <stop offset="1" stop-color="#EA580C"/>
               </linearGradient>
             </defs>
           </svg>
         </div>
-        <span class="brand-name">VANTRA<span>OS</span></span>
+        <div class="brand-text-wrap">
+          <span class="brand-title">VANTRA<span>OS</span></span>
+          <span class="brand-sub">VENDOR OPERATING SYSTEM</span>
+        </div>
       </a>
 
-      <nav class="desktop-nav">
-        <a href="#problem" class="nav-item">The Chaos</a>
-        <a href="#workflow" class="nav-item">Workflow</a>
-        <a href="#catering-showcase" class="nav-item">Live Demo</a>
-        <a href="#verticals" class="nav-item">Industries</a>
-        <a href="#comparison" class="nav-item">vs ERPs</a>
-        <a href="#roi-calc" class="nav-item">Calculator</a>
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="#the-chaos" class="nav-link">The Chaos</a>
+        <a href="#workflow" class="nav-link">How It Works</a>
+        <a href="#dynamic-engine" class="nav-link">Dynamic Engine</a>
+        <a href="#live-mayaar" class="nav-link">Live Mayaar Demo</a>
+        <a href="#vs-erps" class="nav-link">vs Generic ERPs</a>
+        <a href="#roi-calc" class="nav-link">Margin Calculator</a>
       </nav>
 
+      <!-- Nav Action CTAs -->
       <div class="nav-actions">
-        <a href="https://wa.me/923332839452?text=Hi%20Vantra%20OS%20team,%20I%20want%20to%20see%20a%20live%20demo%20of%20the%20vendor%20operating%20system." target="_blank" rel="noopener noreferrer" class="btn btn-outline-nav nav-phone-btn">
+        <a href="https://wa.me/923332839452?text=Hello%20Vantra%20OS!%20I%20would%20like%20to%20see%20a%20walkthrough%20of%20the%20vendor%20operating%20system." target="_blank" rel="noopener noreferrer" class="btn btn-outline-wa nav-phone-item">
           <i data-lucide="phone"></i>
           <span>0333 2839452</span>
         </a>
-        <a href="#early-access" class="btn btn-primary-nav pulse-btn">
+        <a href="#early-access" class="btn btn-primary-nav">
           <span>Get Early Access</span>
           <i data-lucide="chevron-right"></i>
         </a>
-        <!-- Mobile Hamburger -->
-        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation">
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle mobile menu">
           <i data-lucide="menu"></i>
         </button>
       </div>
+
     </div>
 
     <!-- Mobile Drawer -->
     <div class="mobile-drawer" id="mobileDrawer">
-      <a href="#problem" class="mobile-link">The Chaos</a>
-      <a href="#workflow" class="mobile-link">Workflow Engine</a>
-      <a href="#catering-showcase" class="mobile-link">Live Mayaar Demo</a>
-      <a href="#verticals" class="mobile-link">Industry Verticals</a>
-      <a href="#comparison" class="mobile-link">vs Generic ERPs</a>
-      <a href="#roi-calc" class="mobile-link">Margin Calculator</a>
-      <div class="mobile-cta-group">
-        <a href="https://wa.me/923332839452" target="_blank" class="btn btn-outline w-100">
-          <i data-lucide="phone"></i> WhatsApp: 0333 2839452
+      <a href="#the-chaos" class="mobile-link">The Coordination Chaos</a>
+      <a href="#workflow" class="mobile-link">6-Step Workflow Engine</a>
+      <a href="#dynamic-engine" class="mobile-link">Dynamic Customization Engine</a>
+      <a href="#live-mayaar" class="mobile-link">Live Mayaar Catering System â†—</a>
+      <a href="#vs-erps" class="mobile-link">Why Zoho &amp; Odoo Fail</a>
+      <a href="#verticals" class="mobile-link">Future Industry Verticals</a>
+      <a href="#roi-calc" class="mobile-link">Margin Leakage Calculator</a>
+      <div class="mobile-drawer-cta">
+        <a href="https://wa.me/923332839452" target="_blank" class="btn btn-wa w-100">
+          <i data-lucide="message-circle"></i> Chat on WhatsApp (0333 2839452)
         </a>
-        <a href="#early-access" class="btn btn-primary w-100">Get Early Access</a>
+        <a href="#early-access" class="btn btn-primary w-100">Request Early Access Pilot</a>
       </div>
     </div>
   </header>
 
   <!-- Hero Section -->
   <section class="hero-section" id="hero">
-    <div class="container hero-container">
+    <div class="container hero-content-center">
       
-      <div class="hero-header-badge reveal">
-        <span class="badge-icon"><i data-lucide="sparkles"></i></span>
-        <span>A Paradigm Shift For Vendor-Driven Commerce</span>
+      <!-- Top Tag Badge -->
+      <div class="hero-badge reveal">
+        <span class="hero-badge-sparkle"><i data-lucide="sparkles"></i></span>
+        <span>The First Purpose-Built OS For Vendor-Delivered Commerce</span>
+        <span class="hero-badge-arrow"><i data-lucide="arrow-right"></i></span>
       </div>
 
-      <h1 class="hero-title reveal">
-        Many problems.<br>
-        <span class="gradient-text">One profound solution.</span>
+      <!-- Core Headline -->
+      <h1 class="hero-heading reveal">
+        Your vendors delivered.<br>
+        <span class="hero-gradient-text">Your profit didn't.</span>
       </h1>
 
-      <p class="hero-subtitle reveal">
-        You take one booking. Suddenly you’re coordinating 12 vendors across WhatsApp, juggling conflicting Excel tabs, and guessing profit weeks after the job is done. 
-        <strong>Vantra OS</strong> replaces the coordination nightmare with a unified operating system built specifically for businesses that deliver through vendors.
+      <!-- Subheadline -->
+      <p class="hero-subheading reveal">
+        The money leaked before you could count it — buried in WhatsApp threads, unrecorded vendor adjustments, and paper bills that arrived weeks too late.
+        <strong>Vantra OS</strong> gives your business a real operating system: synchronized quotations, automated vendor sheets, and live event profit margins — before you leave the venue.
       </p>
 
-      <div class="hero-cta-cluster reveal">
-        <a href="#early-access" class="btn btn-hero-primary shadow-glow">
-          <span>Request Early Access</span>
+      <!-- Primary Action Cluster -->
+      <div class="hero-actions reveal">
+        <a href="#early-access" class="btn btn-hero-cta shadow-glow">
+          <span>Request Early Access Pilot</span>
           <i data-lucide="arrow-right"></i>
         </a>
-        <a href="https://catering-system-gamma.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-hero-secondary">
+        <a href="https://catering-system-gamma.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-hero-demo">
           <i data-lucide="play-circle"></i>
-          <span>Launch Live System Demo</span>
+          <span>Launch Live Demo</span>
+          <span class="pill-live-tag">LIVE</span>
         </a>
-        <a href="https://wa.me/923332839452?text=Hello%20Vantra%20OS!%20I%20would%20like%20to%20schedule%20an%20exclusive%20walkthrough." target="_blank" rel="noopener noreferrer" class="btn btn-hero-wa">
+        <a href="https://wa.me/923332839452?text=Hi%20Vantra%20OS%20team,%20I%20want%20to%20schedule%20a%20live%20demo%20walkthrough." target="_blank" rel="noopener noreferrer" class="btn btn-hero-whatsapp">
           <i data-lucide="message-circle"></i>
           <span>Chat on WhatsApp</span>
         </a>
       </div>
 
-      <!-- Trust Micro-Metrics -->
-      <div class="hero-metrics-strip reveal">
-        <div class="metric-pill">
-          <i data-lucide="check-circle-2" class="text-success"></i>
-          <span><strong>1 Live Enterprise</strong> in Karachi</span>
+      <!-- Live Traction Micro-Pills -->
+      <div class="hero-traction-strip reveal">
+        <div class="traction-item">
+          <i data-lucide="check-circle-2" class="text-emerald"></i>
+          <span><strong>Live in Production</strong> â€” Real Businesses, Real Events</span>
         </div>
-        <div class="metric-divider"></div>
-        <div class="metric-pill">
-          <i data-lucide="shield-check" class="text-primary"></i>
-          <span><strong>853 Automated Tests</strong> (ACID Safe)</span>
+        <div class="traction-dot"></div>
+        <div class="traction-item">
+          <i data-lucide="shield-check" class="text-orange"></i>
+          <span><strong>853 Automated Tests</strong> (ACID-Safe)</span>
         </div>
-        <div class="metric-divider"></div>
-        <div class="metric-pill">
-          <i data-lucide="zap" class="text-amber"></i>
-          <span><strong>0% Reconciliation Leakage</strong></span>
+        <div class="traction-dot"></div>
+        <div class="traction-item">
+          <i data-lucide="send" class="text-blue"></i>
+          <span><strong>1-Click WhatsApp</strong> Work Orders</span>
         </div>
-        <div class="metric-divider"></div>
-        <div class="metric-pill">
-          <i data-lucide="refresh-cw" class="text-accent"></i>
-          <span><strong>Instant WhatsApp</strong> Dispatch</span>
+        <div class="traction-dot"></div>
+        <div class="traction-item">
+          <i data-lucide="trending-up" class="text-emerald"></i>
+          <span><strong>Instant Event P&amp;L</strong> Before Midnight</span>
         </div>
       </div>
 
-      <!-- Hero Dashboard Visual / Interactive Mockup -->
-      <div class="hero-mockup-wrapper reveal">
-        <div class="browser-frame-chrome">
-          <div class="window-controls">
-            <span class="ctrl red"></span>
-            <span class="ctrl yellow"></span>
-            <span class="ctrl green"></span>
+      <!-- Masterpiece Interactive App Dashboard Simulation -->
+      <div class="hero-simulator-card reveal">
+        
+        <!-- Window Chrome Bar -->
+        <div class="simulator-chrome">
+          <div class="chrome-controls">
+            <span class="ctrl-dot dot-red"></span>
+            <span class="ctrl-dot dot-yellow"></span>
+            <span class="ctrl-dot dot-green"></span>
           </div>
-          <div class="browser-address">
-            <i data-lucide="lock" class="address-lock"></i>
-            <span>vantraos.com/live/mayaar-catering/dossier/EVT-2026-0924</span>
+          <div class="chrome-url-bar">
+            <i data-lucide="lock" class="url-lock-icon"></i>
+            <span>vantraos.com/live-production/mayaar-catering/job-QT-JR-000934</span>
           </div>
-          <div class="browser-status">
-            <span class="status-live">● SYSTEM LIVE</span>
-          </div>
-        </div>
-
-        <div class="mockup-content">
-          <!-- Mockup Top Bar -->
-          <div class="mockup-nav">
-            <div class="event-meta">
-              <span class="event-id">JOB #QT-JR-000934</span>
-              <h4 class="event-name">Farhan &amp; Zoya Grand Walima Reception</h4>
-              <span class="event-tag">850 Guests · Royal Palm Creek · 8 Vendors Assigned</span>
-            </div>
-            <div class="event-stats-cluster">
-              <div class="stat-mini">
-                <span class="label">Gross Revenue</span>
-                <span class="val text-dark">PKR 1,487,500</span>
-              </div>
-              <div class="stat-mini">
-                <span class="label">Vendor Outflow</span>
-                <span class="val text-danger">PKR 924,000</span>
-              </div>
-              <div class="stat-mini highlight-card">
-                <span class="label">Net Event Margin</span>
-                <span class="val text-success font-mono">+37.8% (PKR 563,500)</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Mockup Workflow Interactive Strip -->
-          <div class="mockup-grid">
-            <!-- Left Side: Live Vendor Sheet Engine Preview -->
-            <div class="mockup-card vendor-sheet-preview">
-              <div class="mockup-card-header">
-                <div>
-                  <h5><i data-lucide="layers" class="icon-subtle"></i> Dynamic Vendor Sheet Engine</h5>
-                  <span class="card-caption">Split meat &amp; cooking, route deliveries, post-event delayed billing</span>
-                </div>
-                <span class="badge-status-green">Auto-Synced from Invoice</span>
-              </div>
-
-              <div class="mockup-table">
-                <div class="table-row table-head">
-                  <span>Item &amp; Component</span>
-                  <span>Vendor Assigned</span>
-                  <span>Quantity</span>
-                  <span>Cost Rate</span>
-                  <span>Ledger Status</span>
-                </div>
-                <div class="table-row">
-                  <div class="item-name">
-                    <strong>Mutton Biryani (Special)</strong>
-                    <span class="tag-sub">Component: Meat (60kg)</span>
-                  </div>
-                  <span class="vendor-tag"><i data-lucide="user-check"></i> Tariq Mutton Center</span>
-                  <span class="font-mono">60.0 kg</span>
-                  <span class="font-mono text-dark">PKR 2,450 /kg</span>
-                  <span class="badge-mini-paid">Auto-Allocated</span>
-                </div>
-                <div class="table-row">
-                  <div class="item-name">
-                    <strong>Mutton Biryani (Special)</strong>
-                    <span class="tag-sub">Component: Making &amp; Rice</span>
-                  </div>
-                  <span class="vendor-tag"><i data-lucide="user-check"></i> Ustad Kareem Deegs</span>
-                  <span class="font-mono">5 Deeg</span>
-                  <span class="font-mono text-dark">PKR 7,500 /deeg</span>
-                  <span class="badge-mini-pending">Delayed Bill Rcvd</span>
-                </div>
-                <div class="table-row">
-                  <div class="item-name">
-                    <strong>Chicken Reshmi Handi</strong>
-                    <span class="tag-sub">Complete Preparation</span>
-                  </div>
-                  <span class="vendor-tag"><i data-lucide="user-check"></i> Al-Madina Foods</span>
-                  <span class="font-mono">8 Trays</span>
-                  <span class="font-mono text-dark">PKR 14,000 /tray</span>
-                  <span class="badge-mini-paid">Auto-Allocated</span>
-                </div>
-                <div class="table-row">
-                  <div class="item-name">
-                    <strong>Cartage &amp; Venue Transport</strong>
-                    <span class="tag-sub">Direct to Venue Gate 4</span>
-                  </div>
-                  <span class="vendor-tag"><i data-lucide="truck"></i> Shaukat Logistics</span>
-                  <span class="font-mono">2 Trips</span>
-                  <span class="font-mono text-dark">PKR 18,000</span>
-                  <span class="badge-mini-paid">Settled Via Cash</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Right Side: Wallet & Action Center -->
-            <div class="mockup-card actions-preview">
-              <div class="mockup-card-header">
-                <div>
-                  <h5><i data-lucide="wallet" class="icon-subtle"></i> Real-Money Wallets</h5>
-                  <span class="card-caption">Atomic double-entry movement</span>
-                </div>
-                <span class="badge-status-blue">PKR Lakh-Crore</span>
-              </div>
-
-              <div class="wallet-chips-grid">
-                <div class="wallet-chip">
-                  <span class="wallet-name">Meezan Bank (Ops)</span>
-                  <span class="wallet-bal">PKR 4,821,400</span>
-                  <span class="wallet-indicator bg-success"></span>
-                </div>
-                <div class="wallet-chip">
-                  <span class="wallet-name">Office Petty Cash</span>
-                  <span class="wallet-bal">PKR 185,200</span>
-                  <span class="wallet-indicator bg-amber"></span>
-                </div>
-                <div class="wallet-chip">
-                  <span class="wallet-name">JazzCash Emergency</span>
-                  <span class="wallet-bal">PKR 74,500</span>
-                  <span class="wallet-indicator bg-primary"></span>
-                </div>
-              </div>
-
-              <div class="live-action-box">
-                <div class="action-box-header">
-                  <i data-lucide="message-square" class="text-success"></i>
-                  <span>1-Click WhatsApp Dispatch Ready</span>
-                </div>
-                <p class="action-box-p">
-                  Vendor assignments generated without exposing cost rates or client pricing. 4/4 messages delivered.
-                </p>
-                <div class="wa-mock-bubble">
-                  <strong>To: Ustad Kareem (Deeg Maker)</strong>
-                  <p>Order Ref #QT-JR-000934. Deliver 5 Deegs Mutton Biryani to Royal Palm Creek at 6:30 PM. Map attached: maps.google.com/...</p>
-                </div>
-              </div>
-            </div>
+          <div class="chrome-status">
+            <span class="status-indicator-ping"></span>
+            <span>SYSTEM ACTIVE (PKR)</span>
           </div>
         </div>
 
-        <!-- Floating Badges in 3D Space -->
-        <div class="floating-badge badge-top-right">
-          <div class="float-icon bg-success"><i data-lucide="trending-up"></i></div>
-          <div class="float-text">
-            <strong>Event Gross Profit</strong>
-            <span>Calculated live per order</span>
+        <!-- Simulator Core Container -->
+        <div class="simulator-body">
+          
+          <!-- Event Header Banner -->
+          <div class="sim-header">
+            <div class="sim-event-info">
+              <div class="sim-ref-badge">
+                <span class="font-mono">JOB #QT-JR-000934</span>
+                <span class="sim-status-chip">CONFIRMED ORDER</span>
+              </div>
+              <h3 class="sim-event-title">Farhan &amp; Zoya Walima Reception</h3>
+              <p class="sim-event-meta">
+                <i data-lucide="calendar"></i> Friday, 8:30 PM &nbsp;â€¢&nbsp; 
+                <i data-lucide="users"></i> 850 Guests &nbsp;â€¢&nbsp; 
+                <i data-lucide="map-pin"></i> Royal Palm Creek (Gate 4)
+              </p>
+            </div>
+
+            <!-- Financial Metrics Snapshot -->
+            <div class="sim-metrics-group">
+              <div class="sim-metric-card">
+                <span class="sim-metric-lbl">Invoice Revenue</span>
+                <span class="sim-metric-val text-dark font-mono">PKR 1,487,500</span>
+                <span class="sim-metric-sub">PKR 1,750 / head</span>
+              </div>
+              <div class="sim-metric-card">
+                <span class="sim-metric-lbl">Total Vendor Cost</span>
+                <span class="sim-metric-val text-muted font-mono">PKR 924,000</span>
+                <span class="sim-metric-sub">6 Vendors Assigned</span>
+              </div>
+              <div class="sim-metric-card metric-profit-card">
+                <span class="sim-metric-lbl">Gross Event Margin</span>
+                <span class="sim-metric-val text-emerald font-mono">+37.8% (PKR 563,500)</span>
+                <span class="sim-metric-sub text-emerald">Reconciled in real-time</span>
+              </div>
+            </div>
           </div>
+
+          <!-- Simulator Interactive Tabs Switcher -->
+          <div class="sim-tabs-nav">
+            <button class="sim-tab-btn active" data-tab="tab-vendor-sheet">
+              <i data-lucide="layers"></i>
+              <span>Vendor Sheet Engine (Live Split)</span>
+            </button>
+            <button class="sim-tab-btn" data-tab="tab-whatsapp-dispatch">
+              <i data-lucide="message-square"></i>
+              <span>1-Click WhatsApp Dispatch</span>
+            </button>
+            <button class="sim-tab-btn" data-tab="tab-wallets">
+              <i data-lucide="wallet"></i>
+              <span>Multi-Bank Wallets</span>
+            </button>
+            <button class="sim-tab-btn" data-tab="tab-pnl">
+              <i data-lucide="pie-chart"></i>
+              <span>Event P&amp;L Dossier</span>
+            </button>
+          </div>
+
+          <!-- Tab Content 1: Vendor Sheet Engine -->
+          <div class="sim-tab-content active" id="tab-vendor-sheet">
+            <div class="sim-table-wrap">
+              <div class="sim-table-header">
+                <span>Dish / Item Line</span>
+                <span>Component Split</span>
+                <span>Assigned Vendor</span>
+                <span>Quantity</span>
+                <span>Vendor Rate</span>
+                <span>Settlement Status</span>
+              </div>
+              
+              <!-- Row 1: Meat Split -->
+              <div class="sim-table-row highlight-split">
+                <div class="dish-name-cell">
+                  <strong>Special Mutton Biryani</strong>
+                  <span class="sub-label">Main Course (Dinner)</span>
+                </div>
+                <div class="split-badge-cell">
+                  <span class="badge-split meat"><i data-lucide="tag"></i> Meat Component</span>
+                </div>
+                <div class="vendor-cell">
+                  <span class="vendor-name"><i data-lucide="check-circle-2"></i> Tariq Mutton Center</span>
+                  <span class="vendor-sub">Shop #4, Liaquatabad</span>
+                </div>
+                <div class="font-mono">60.0 kg</div>
+                <div class="font-mono text-dark">PKR 2,450 /kg</div>
+                <div><span class="chip-status-paid">Auto-Allocated</span></div>
+              </div>
+
+              <!-- Row 2: Making Split -->
+              <div class="sim-table-row highlight-split">
+                <div class="dish-name-cell">
+                  <strong>Special Mutton Biryani</strong>
+                  <span class="sub-label">Main Course (Dinner)</span>
+                </div>
+                <div class="split-badge-cell">
+                  <span class="badge-split making"><i data-lucide="flame"></i> Making &amp; Rice</span>
+                </div>
+                <div class="vendor-cell">
+                  <span class="vendor-name"><i data-lucide="check-circle-2"></i> Ustad Kareem Deegs</span>
+                  <span class="vendor-sub">Deliver to venue Gate 4</span>
+                </div>
+                <div class="font-mono">5 Deegs</div>
+                <div class="font-mono text-dark">PKR 7,500 /deeg</div>
+                <div><span class="chip-status-pending">Delayed Bill Rcvd</span></div>
+              </div>
+
+              <!-- Row 3: Complete Dish -->
+              <div class="sim-table-row">
+                <div class="dish-name-cell">
+                  <strong>Chicken Reshmi Handi</strong>
+                  <span class="sub-label">Boneless White Gravy</span>
+                </div>
+                <div class="split-badge-cell">
+                  <span class="badge-split single">Single Supply</span>
+                </div>
+                <div class="vendor-cell">
+                  <span class="vendor-name"><i data-lucide="check-circle-2"></i> Al-Madina Kitchens</span>
+                  <span class="vendor-sub">Specialty Gravy Cook</span>
+                </div>
+                <div class="font-mono">8 Trays</div>
+                <div class="font-mono text-dark">PKR 14,000 /tray</div>
+                <div><span class="chip-status-paid">Auto-Allocated</span></div>
+              </div>
+
+              <!-- Row 4: Cartage -->
+              <div class="sim-table-row">
+                <div class="dish-name-cell">
+                  <strong>Cartage &amp; Site Transport</strong>
+                  <span class="sub-label">Suzuki Loading Trip 1 &amp; 2</span>
+                </div>
+                <div class="split-badge-cell">
+                  <span class="badge-split log"><i data-lucide="truck"></i> Logistics</span>
+                </div>
+                <div class="vendor-cell">
+                  <span class="vendor-name"><i data-lucide="check-circle-2"></i> Shaukat Cartage</span>
+                  <span class="vendor-sub">Direct to Creek Club</span>
+                </div>
+                <div class="font-mono">2 Trips</div>
+                <div class="font-mono text-dark">PKR 18,000</div>
+                <div><span class="chip-status-paid">Paid Via Cash</span></div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Tab Content 2: WhatsApp Dispatch -->
+          <div class="sim-tab-content" id="tab-whatsapp-dispatch">
+            <div class="whatsapp-preview-grid">
+              <div class="wa-mock-sidebar">
+                <h5>Dispatched Vendor Orders (4/4)</h5>
+                <div class="wa-vendor-item active">
+                  <div class="wa-avatar">UK</div>
+                  <div>
+                    <strong>Ustad Kareem (Deegs)</strong>
+                    <span>5 Deegs Biryani â€¢ Dispatched 6:15 PM</span>
+                  </div>
+                </div>
+                <div class="wa-vendor-item">
+                  <div class="wa-avatar">TM</div>
+                  <div>
+                    <strong>Tariq Mutton Center</strong>
+                    <span>60kg Mutton â€¢ Delivered</span>
+                  </div>
+                </div>
+                <div class="wa-vendor-item">
+                  <div class="wa-avatar">AM</div>
+                  <div>
+                    <strong>Al-Madina Kitchens</strong>
+                    <span>8 Trays Handi â€¢ En Route</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="wa-mock-chat">
+                <div class="wa-chat-header">
+                  <div class="wa-chat-title">
+                    <span class="wa-user-dot"></span>
+                    <strong>Ustad Kareem Bawarchi</strong>
+                    <span class="wa-phone font-mono">+92 300 4829104</span>
+                  </div>
+                  <span class="wa-security-tag"><i data-lucide="shield-check"></i> Zero Price Exposure</span>
+                </div>
+
+                <div class="wa-chat-body">
+                  <div class="wa-bubble outgoing">
+                    <p class="wa-msg-title">ðŸ“‹ <strong>MAYAAR CATERING â€” WORK ORDER DISPATCH</strong></p>
+                    <p><strong>Job Ref:</strong> #QT-JR-000934 (Walima Reception)</p>
+                    <p><strong>Event Date:</strong> Today, 1 Oct 2026</p>
+                    <p><strong>Required Items:</strong></p>
+                    <p class="wa-item-bullet">â€¢ 5 Deegs Mutton Biryani (Special Basmati Rice)</p>
+                    <p class="wa-item-bullet">â€¢ Ready Delivery Time: 7:00 PM Sharp</p>
+                    <p><strong>Destination:</strong> Royal Palm Creek, Gate 4 Service Lane</p>
+                    <p>ðŸ“ <strong>Google Maps Link:</strong> <a href="#" class="wa-link">maps.google.com/venue-gate4</a></p>
+                    <div class="wa-msg-footer">
+                      <span>Delivered via Vantra OS WhatsApp Engine</span>
+                      <i data-lucide="check-check" class="text-blue"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Content 3: Real Money Wallets -->
+          <div class="sim-tab-content" id="tab-wallets">
+            <div class="sim-wallets-grid">
+              <div class="wallet-card">
+                <div class="wallet-top">
+                  <div class="wallet-icon-box bg-emerald-subtle"><i data-lucide="landmark" class="text-emerald"></i></div>
+                  <span class="wallet-badge">OPERATING BANK</span>
+                </div>
+                <span class="wallet-title">Meezan Bank (Main Collection)</span>
+                <h4 class="wallet-balance font-mono">PKR 4,821,400</h4>
+                <div class="wallet-activity">
+                  <span>Last Txn: +PKR 800,000 (Advance Client Deposit)</span>
+                </div>
+              </div>
+
+              <div class="wallet-card">
+                <div class="wallet-top">
+                  <div class="wallet-icon-box bg-orange-subtle"><i data-lucide="banknote" class="text-orange"></i></div>
+                  <span class="wallet-badge">PETTY CASH</span>
+                </div>
+                <span class="wallet-title">Office Safe &amp; Site Cash</span>
+                <h4 class="wallet-balance font-mono">PKR 185,200</h4>
+                <div class="wallet-activity">
+                  <span>Last Txn: -PKR 18,000 (Shaukat Cartage Trip)</span>
+                </div>
+              </div>
+
+              <div class="wallet-card">
+                <div class="wallet-top">
+                  <div class="wallet-icon-box bg-blue-subtle"><i data-lucide="smartphone" class="text-blue"></i></div>
+                  <span class="wallet-badge">MOBILE WALLET</span>
+                </div>
+                <span class="wallet-title">JazzCash Emergency Settlement</span>
+                <h4 class="wallet-balance font-mono">PKR 74,500</h4>
+                <div class="wallet-activity">
+                  <span>Last Txn: -PKR 5,000 (Ice Block Emergency Delivery)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Content 4: Event P&L Dossier -->
+          <div class="sim-tab-content" id="tab-pnl">
+            <div class="pnl-dossier-layout">
+              <div class="pnl-breakdown-card">
+                <h5>Job Profit &amp; Loss Breakdown</h5>
+                <div class="pnl-row">
+                  <span>Gross Invoice Total (850 Guests @ 1,750):</span>
+                  <strong class="font-mono text-dark">PKR 1,487,500</strong>
+                </div>
+                <div class="pnl-row text-danger">
+                  <span>Less: Food Vendor Line Items:</span>
+                  <strong class="font-mono">- PKR 834,000</strong>
+                </div>
+                <div class="pnl-row text-danger">
+                  <span>Less: Cartage &amp; Loading Logistics:</span>
+                  <strong class="font-mono">- PKR 18,000</strong>
+                </div>
+                <div class="pnl-row text-danger">
+                  <span>Less: Staff Tips &amp; On-Site Support:</span>
+                  <strong class="font-mono">- PKR 22,000</strong>
+                </div>
+                <div class="pnl-row text-danger">
+                  <span>Less: Sales Agent Referral Commission:</span>
+                  <strong class="font-mono">- PKR 50,000</strong>
+                </div>
+                <div class="pnl-divider"></div>
+                <div class="pnl-row pnl-net-row">
+                  <span>NET RECONCILED EVENT PROFIT:</span>
+                  <strong class="font-mono text-emerald">+ PKR 563,500 (37.8% GP)</strong>
+                </div>
+              </div>
+
+              <div class="pnl-closing-card">
+                <div class="closing-badge"><i data-lucide="lock"></i> ACID PERIOD LOCK</div>
+                <h4>Financial Period Protection</h4>
+                <p>When this event closes tonight, all vendor balances post to the vendor ledger via FIFO. Retroactive edits to locked periods require mandatory signed audit reasons.</p>
+                <div class="audit-chip">
+                  <i data-lucide="shield"></i> 100% Audit-Logged
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        <div class="floating-badge badge-bottom-left">
-          <div class="float-icon bg-orange"><i data-lucide="split"></i></div>
-          <div class="float-text">
+        <!-- Floating 3D Micro-Badges -->
+        <div class="sim-floating-pill pill-top-left">
+          <div class="pill-icon bg-orange"><i data-lucide="git-branch"></i></div>
+          <div class="pill-text">
             <strong>Meat / Making Split</strong>
-            <span>Patent-grade dish component routing</span>
+            <span>1 Dish &rarr; Routed to 2 independent vendors</span>
+          </div>
+        </div>
+
+        <div class="sim-floating-pill pill-bottom-right">
+          <div class="pill-icon bg-emerald"><i data-lucide="clock"></i></div>
+          <div class="pill-text">
+            <strong>Delayed Billing Safe</strong>
+            <span>Accept vendor paper bills weeks post-event</span>
           </div>
         </div>
 
@@ -331,95 +512,106 @@
   </section>
 
   <!-- Problem Section: The Chaos -->
-  <section class="section-padding bg-slate-subtle" id="problem">
+  <section class="section-padding bg-slate-50" id="the-chaos">
     <div class="container">
       
-      <div class="section-title-wrap text-center reveal">
-        <span class="section-eyebrow text-danger"><i data-lucide="alert-triangle"></i> The Status Quo Is Broken</span>
-        <h2 class="section-heading">One booking. 14 scattered apps.<br><span class="text-danger">Zero unified control.</span></h2>
-        <p class="section-subtext">
-          If you deliver services through external vendors, you know the daily war room. You don't have an accounting problem — you have an <strong>orchestration breakdown</strong>.
+      <div class="section-head-center reveal">
+        <span class="section-pill-tag tag-danger">
+          <i data-lucide="alert-triangle"></i> THE ROOT OPERATIONAL FAILURE
+        </span>
+        <h2 class="section-main-heading">
+          One booking. 14 disconnected tools.<br>
+          <span class="text-danger">Zero unified control.</span>
+        </h2>
+        <p class="section-sub-heading">
+          If your business delivers through external vendors, you donâ€™t have a bookkeeping problem. You have an <strong>orchestration breakdown</strong>.
         </p>
       </div>
 
-      <div class="chaos-grid">
+      <div class="chaos-contrast-grid">
         
-        <!-- Left: The Chaotic Reality -->
-        <div class="chaos-card chaos-bad reveal">
-          <div class="chaos-card-badge text-danger">
-            <i data-lucide="x-circle"></i> The Chaotic Reality
+        <!-- Chaos Card -->
+        <div class="contrast-card card-chaos reveal">
+          <div class="card-status-badge text-danger">
+            <i data-lucide="x-circle"></i> The Fragmented Manual Reality
           </div>
-          <h3 class="chaos-title">How vendor-reliant businesses run today</h3>
+          <h3 class="contrast-heading">How vendor-reliant operators survive today</h3>
           
-          <ul class="chaos-list">
-            <li>
-              <div class="icon-wrap bg-danger-light"><i data-lucide="message-circle" class="text-danger"></i></div>
+          <div class="contrast-items-list">
+            <div class="contrast-item">
+              <div class="contrast-icon bg-danger-soft"><i data-lucide="message-square" class="text-danger"></i></div>
               <div>
-                <strong>WhatsApp Revision Nightmare</strong>
-                <p>Client asks for 50 fewer guests. You notify the meat vendor, forget the bakery, and text the decorator on a dead group. 3 different versions of truth.</p>
+                <strong>WhatsApp Revision Disaster</strong>
+                <p>The client reduces headcount from 800 to 700. You update the mutton vendor, forget the biryani cook, and message the decorator on a dead group. 3 different versions of reality.</p>
               </div>
-            </li>
-            <li>
-              <div class="icon-wrap bg-danger-light"><i data-lucide="file-spreadsheet" class="text-danger"></i></div>
+            </div>
+
+            <div class="contrast-item">
+              <div class="contrast-icon bg-danger-soft"><i data-lucide="file-spreadsheet" class="text-danger"></i></div>
               <div>
                 <strong>Conflicting Excel Trackers</strong>
-                <p>One file for quotations, another for vendor rates, a handwritten diary for cash advances. Nobody knows what’s actually owed.</p>
+                <p>One file for quotations, another for vendor rates, and a handwritten diary for cash advances. Nobody in your office knows the true cash position.</p>
               </div>
-            </li>
-            <li>
-              <div class="icon-wrap bg-danger-light"><i data-lucide="clock" class="text-danger"></i></div>
+            </div>
+
+            <div class="contrast-item">
+              <div class="contrast-icon bg-danger-soft"><i data-lucide="receipt" class="text-danger"></i></div>
               <div>
-                <strong>The Delayed Billing Blindspot</strong>
-                <p>Vendors drop their paper slips 3 weeks after the event. By the time you total the costs, the client has already cleared their balance and you made zero margin.</p>
+                <strong>The Delayed Bill Profit Trap</strong>
+                <p>Vendors drop their paper slips 3 weeks after the wedding. By the time you total the costs, the client has already cleared their bill, and your margin was completely wiped out.</p>
               </div>
-            </li>
-            <li>
-              <div class="icon-wrap bg-danger-light"><i data-lucide="unplug" class="text-danger"></i></div>
+            </div>
+
+            <div class="contrast-item">
+              <div class="contrast-icon bg-danger-soft"><i data-lucide="help-circle" class="text-danger"></i></div>
               <div>
                 <strong>Odoo &amp; Zoho Can't Handle Vendors</strong>
-                <p>Generic ERPs want a manufacturing warehouse or standard AP bills. They don't understand dish splits, per-head quotes, or cartage tips.</p>
+                <p>Generic ERPs assume you own a manufacturing plant or standard inventory warehouse. They have zero understanding of deeg units, component splits, or delayed rate entries.</p>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
 
-        <!-- Right: The Vantra OS Resolution -->
-        <div class="chaos-card chaos-good reveal">
-          <div class="chaos-card-badge text-success">
-            <i data-lucide="check-circle-2"></i> The Vantra OS Engine
+        <!-- Solution Card -->
+        <div class="contrast-card card-vantra reveal">
+          <div class="card-status-badge text-emerald">
+            <i data-lucide="check-circle-2"></i> The Vantra OS Unified Engine
           </div>
-          <h3 class="chaos-title">How high-margin operators run on Vantra</h3>
+          <h3 class="contrast-heading">How high-margin operators run on Vantra</h3>
           
-          <ul class="chaos-list">
-            <li>
-              <div class="icon-wrap bg-success-light"><i data-lucide="git-merge" class="text-success"></i></div>
+          <div class="contrast-items-list">
+            <div class="contrast-item">
+              <div class="contrast-icon bg-emerald-soft"><i data-lucide="git-merge" class="text-emerald"></i></div>
               <div>
                 <strong>Single Event Source of Truth</strong>
-                <p>Quotation, client invoice, vendor sheets, and real-money ledgers share a single unified data schema. An invoice change safely diffs all vendor sheets.</p>
+                <p>Quotation, client invoice, vendor sheets, and multi-bank ledgers share a single unified schema. Changing an invoice safely diffs and updates all vendor work orders.</p>
               </div>
-            </li>
-            <li>
-              <div class="icon-wrap bg-success-light"><i data-lucide="share-2" class="text-success"></i></div>
+            </div>
+
+            <div class="contrast-item">
+              <div class="contrast-icon bg-emerald-soft"><i data-lucide="send" class="text-emerald"></i></div>
               <div>
                 <strong>1-Click Zero-Leak WhatsApp Dispatch</strong>
-                <p>Generate clean, targeted assignment cards directly into WhatsApp. Vendors see only their quantities and delivery destinations—never your client margins.</p>
+                <p>Generate clean, targeted assignment cards into WhatsApp. Vendors see only their quantities, units, and Google Maps destination pinsâ€”never your client margins.</p>
               </div>
-            </li>
-            <li>
-              <div class="icon-wrap bg-success-light"><i data-lucide="calendar-check" class="text-success"></i></div>
+            </div>
+
+            <div class="contrast-item">
+              <div class="contrast-icon bg-emerald-soft"><i data-lucide="clock" class="text-emerald"></i></div>
               <div>
-                <strong>Delayed Billing Architecture</strong>
-                <p>Vendor sheets stay open in an explicit "awaiting rate" state. When paper bills arrive weeks later, FIFO reconciliation updates the event ledger immediately.</p>
+                <strong>First-Class Delayed Billing Engine</strong>
+                <p>Vendor sheets stay in an explicit "awaiting rate" state until physical bills arrive weeks later. FIFO reconciliation immediately recalculates your realized margin.</p>
               </div>
-            </li>
-            <li>
-              <div class="icon-wrap bg-success-light"><i data-lucide="pie-chart" class="text-success"></i></div>
+            </div>
+
+            <div class="contrast-item">
+              <div class="contrast-icon bg-emerald-soft"><i data-lucide="bar-chart-2" class="text-emerald"></i></div>
               <div>
-                <strong>Instant Per-Job P&amp;L Intelligence</strong>
-                <p>Know your exact gross profit, commission clawbacks, and net yield on every single job before the night is over.</p>
+                <strong>Instant Event-Level Profitability</strong>
+                <p>Know your exact gross profit, net yield, and salesperson commission deductions on every single booking before midnightâ€”not 40 days later.</p>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -427,85 +619,164 @@
     </div>
   </section>
 
-  <!-- How Vantra Works: 6-Step Synchronized Engine -->
-  <section class="section-padding" id="workflow">
+  <!-- Interactive Dynamic Customization Engine -->
+  <section class="section-padding" id="dynamic-engine">
     <div class="container">
       
-      <div class="section-title-wrap text-center reveal">
-        <span class="section-eyebrow text-primary"><i data-lucide="cpu"></i> Connected Architecture</span>
-        <h2 class="section-heading">Keep Every Commitment Connected</h2>
-        <p class="section-subtext">
-          From first inquiry to final bank reconciliation, Vantra OS keeps your customer promises, vendor obligations, and cash reserves in perpetual sync.
+      <div class="section-head-center reveal">
+        <span class="section-pill-tag tag-primary">
+          <i data-lucide="cpu"></i> SELF-CONFIGURING ARCHITECTURE
+        </span>
+        <h2 class="section-main-heading">
+          Tell Vantra How You Operate.<br>
+          <span class="gradient-text">The Software Configures Itself.</span>
+        </h2>
+        <p class="section-sub-heading">
+          We don't sell rigid, one-size-fits-all software. Vantra OS asks your business a few dynamic questions during guided setup and generates an industry-tailored operational engine.
         </p>
       </div>
 
-      <div class="workflow-steps-grid">
+      <!-- Interactive Dynamic Simulator Box -->
+      <div class="dynamic-sim-container reveal">
+        
+        <div class="dynamic-sim-nav">
+          <span class="sim-nav-label">Select Your Business Model:</span>
+          <div class="sim-sector-pills" id="sectorPills">
+            <button class="sector-pill active" data-sector="catering">
+              <i data-lucide="utensils"></i>
+              <span>Catering &amp; Banquets</span>
+            </button>
+            <button class="sector-pill" data-sector="events">
+              <i data-lucide="sparkles"></i>
+              <span>Event Decor &amp; Production</span>
+            </button>
+            <button class="sector-pill" data-sector="rentals">
+              <i data-lucide="home"></i>
+              <span>Marquee &amp; Equipment Hire</span>
+            </button>
+            <button class="sector-pill" data-sector="fitout">
+              <i data-lucide="hard-hat"></i>
+              <span>Turnkey Project Supply</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="dynamic-sim-display" id="sectorDisplay">
+          <!-- Dynamic Content generated by JS -->
+          <div class="dynamic-col dynamic-questions">
+            <div class="dyn-header">
+              <span class="dyn-step-pill">STEP 1: GUIDED QUESTIONS</span>
+              <h4>Operational Intake Questions</h4>
+            </div>
+            <div class="dyn-question-cards" id="dynQuestionsList">
+              <!-- Injected by app.js -->
+            </div>
+          </div>
+
+          <div class="dynamic-col dynamic-output">
+            <div class="dyn-header">
+              <span class="dyn-step-pill bg-emerald-soft text-emerald">STEP 2: TAILORED WORKFLOW GENERATED</span>
+              <h4 id="dynOutputTitle">Custom Operational Configuration</h4>
+            </div>
+            <div class="dyn-output-content" id="dynOutputContent">
+              <!-- Injected by app.js -->
+            </div>
+            <div class="dyn-onboard-cta">
+              <div class="onboard-badge">
+                <i data-lucide="users"></i> Supported Onboarding
+              </div>
+              <p>Our solutions architects personally populate your vendors, unit formulas, and bank accounts within 48 hours.</p>
+              <a href="#early-access" class="btn btn-outline-primary btn-sm">Configure My Business</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6-Step Workflow Engine -->
+  <section class="section-padding bg-slate-50" id="workflow">
+    <div class="container">
+      
+      <div class="section-head-center reveal">
+        <span class="section-pill-tag tag-primary">
+          <i data-lucide="workflow"></i> CONNECTED WORKFLOW ENGINE
+        </span>
+        <h2 class="section-main-heading">Keep Every Commitment Connected</h2>
+        <p class="section-sub-heading">
+          From the first quotation inquiry to final bank reconciliation, Vantra OS keeps customer promises, vendor work orders, and cash reserves in perpetual sync.
+        </p>
+      </div>
+
+      <div class="workflow-cards-grid">
         
         <!-- Step 1 -->
-        <div class="workflow-step-card reveal" data-step="01">
-          <div class="step-num">01</div>
-          <div class="step-icon-box"><i data-lucide="file-text"></i></div>
+        <div class="workflow-card reveal">
+          <div class="workflow-step-num">01</div>
+          <div class="workflow-icon bg-orange-soft"><i data-lucide="file-text" class="text-orange"></i></div>
           <h4>Quotation Wizard &amp; AI Suggestions</h4>
           <p>
-            Build comprehensive proposals in under 4 minutes. AI headcount suggestions calculate ingredient weights, deeg counts, and per-head pricing tiers automatically.
+            Build multi-course proposals in under 4 minutes. AI headcount suggestions calculate ingredient weights, deeg counts, and per-head pricing tiers automatically.
           </p>
-          <div class="step-tag">E-Signature Ready</div>
+          <div class="workflow-tag">E-Signature Ready</div>
         </div>
 
         <!-- Step 2 -->
-        <div class="workflow-step-card reveal" data-step="02">
-          <div class="step-num">02</div>
-          <div class="step-icon-box"><i data-lucide="check-square"></i></div>
-          <h4>Instant Invoice &amp; Client Portal</h4>
+        <div class="workflow-card reveal">
+          <div class="workflow-step-num">02</div>
+          <div class="workflow-icon bg-blue-soft"><i data-lucide="check-square" class="text-blue"></i></div>
+          <h4>Instant Tax Invoice &amp; Client Portal</h4>
           <p>
-            1-click conversion from approved quote into an official tax invoice. Clients sign or review through a tokenized public URL without creating any login accounts.
+            1-click conversion from approved quote to official invoice. Clients view, sign, and download PDF statements via a tokenized public URLâ€”no login required.
           </p>
-          <div class="step-tag">ACID-Reversal Safe</div>
+          <div class="workflow-tag">ACID Reversal Safe</div>
         </div>
 
         <!-- Step 3 -->
-        <div class="workflow-step-card reveal highlight-step" data-step="03">
-          <div class="step-badge-core">CORE INNOVATION</div>
-          <div class="step-num">03</div>
-          <div class="step-icon-box"><i data-lucide="layers"></i></div>
-          <h4>Vendor Sheet Engine Generation</h4>
+        <div class="workflow-card highlight-card reveal">
+          <div class="core-patent-badge">CORE INNOVATION</div>
+          <div class="workflow-step-num">03</div>
+          <div class="workflow-icon bg-orange-soft"><i data-lucide="layers" class="text-orange"></i></div>
+          <h4>The Vendor Sheet Engine</h4>
           <p>
-            The beating heart of Vantra. Auto-populates item lines, splits meat from preparation, assigns distinct delivery addresses, and caches vendor pricing histories.
+            The heart of Vantra. Auto-populates line items from the invoice, splits meat from cooking, routes delivery destinations, and holds open for delayed bills.
           </p>
-          <div class="step-tag text-primary">Diff &amp; Merge Resync</div>
+          <div class="workflow-tag text-orange">Diff &amp; Merge Resync</div>
         </div>
 
         <!-- Step 4 -->
-        <div class="workflow-step-card reveal" data-step="04">
-          <div class="step-num">04</div>
-          <div class="step-icon-box"><i data-lucide="send"></i></div>
-          <h4>WhatsApp Direct Dispatch</h4>
+        <div class="workflow-card reveal">
+          <div class="workflow-step-num">04</div>
+          <div class="workflow-icon bg-emerald-soft"><i data-lucide="send" class="text-emerald"></i></div>
+          <h4>Zero-Friction WhatsApp Dispatch</h4>
           <p>
-            No complex app installs for vendors. Vantra compiles vendor-specific work orders with Google Maps coordinates and dispatches via formatted WhatsApp cards.
+            No apps for vendors to download. Vantra auto-compiles vendor work orders with Google Maps coordinates and sends formatted WhatsApp messages directly.
           </p>
-          <div class="step-tag">Zero Price Exposure</div>
+          <div class="workflow-tag">Zero Price Exposure</div>
         </div>
 
         <!-- Step 5 -->
-        <div class="workflow-step-card reveal" data-step="05">
-          <div class="step-num">05</div>
-          <div class="step-icon-box"><i data-lucide="credit-card"></i></div>
-          <h4>Real-Money Wallets &amp; Vendor Debt</h4>
+        <div class="workflow-card reveal">
+          <div class="workflow-step-num">05</div>
+          <div class="workflow-icon bg-purple-soft"><i data-lucide="wallet" class="text-purple"></i></div>
+          <h4>Double-Entry Wallets &amp; Vendor Debt</h4>
           <p>
-            Track exact cash positions across Meezan Bank, JazzCash, EasyPaisa, and Office Cash. Overpaying a vendor automatically records a credit balance for the next job.
+            Track real liquid cash across Meezan Bank, JazzCash, EasyPaisa, and Office Cash. Overpaying a vendor automatically records credit balance for their next event.
           </p>
-          <div class="step-tag">FIFO Auto Allocation</div>
+          <div class="workflow-tag">FIFO Auto Allocation</div>
         </div>
 
         <!-- Step 6 -->
-        <div class="workflow-step-card reveal" data-step="06">
-          <div class="step-num">06</div>
-          <div class="step-icon-box"><i data-lucide="bar-chart-3"></i></div>
+        <div class="workflow-card reveal">
+          <div class="workflow-step-num">06</div>
+          <div class="workflow-icon bg-emerald-soft"><i data-lucide="pie-chart" class="text-emerald"></i></div>
           <h4>Event P&amp;L Dossier &amp; Closing</h4>
           <p>
-            Instant gross profit per event: Invoice Revenue minus Vendor Sheet costs, cartage, and salesperson commission. Lock closed months with mandatory justification.
+            Instant gross profit per booking: Invoice Revenue minus Vendor Sheet costs, cartage, and salesperson commission. Lock closed months with mandatory audit trail.
           </p>
-          <div class="step-tag">Financial Period Lock</div>
+          <div class="workflow-tag">Financial Period Lock</div>
         </div>
 
       </div>
@@ -514,115 +785,98 @@
   </section>
 
   <!-- Deep Dive Showcase: Mayaar Catering Live Engine -->
-  <section class="section-padding bg-dark text-white" id="catering-showcase">
+  <section class="section-padding bg-dark text-white" id="live-mayaar">
     <div class="container">
       
-      <div class="deep-dive-badge-cluster reveal">
-        <span class="badge-pill bg-primary-glow">
-          <i data-lucide="flame"></i> Live Implementation Proof
-        </span>
-        <span class="badge-pill bg-glass">
-          Karachi, Pakistan
-        </span>
-        <span class="badge-pill bg-glass">
-          Tech Stack: Next.js 16 · Neon Postgres · Upstash Redis · Prisma
-        </span>
+      <!-- Top Pills -->
+      <div class="deep-dive-pill-strip reveal">
+        <span class="deep-pill bg-orange-glow"><i data-lucide="flame"></i> LIVE IMPLEMENTATION PROOF</span>
+        <span class="deep-pill bg-glass">Karachi, Pakistan</span>
+        <span class="deep-pill bg-glass font-mono">Next.js 16 Â· Neon Postgres Â· Upstash Redis Â· Prisma</span>
       </div>
 
-      <div class="deep-dive-header reveal">
-        <h2 class="deep-dive-title">
+      <div class="deep-dive-head reveal">
+        <h2 class="deep-dive-main-title">
           Mayaar Premium Catering:<br>
-          <span class="gradient-text-light">A Capability Deep Dive</span>
+          <span class="gradient-text-light">System Capability Deep Dive</span>
         </h2>
-        <p class="deep-dive-lead">
-          We don't sell theoretical wireframes. Our catering operating system was engineered directly on the ground in Karachi, handling real wedding orders, hundreds of deegs, and daily vendor settlements.
+        <p class="deep-dive-sub">
+          We donâ€™t sell theoretical wireframes. Our catering operating system was engineered directly on the ground in Karachi, handling real wedding orders, hundreds of deegs, and daily multi-vendor settlements.
         </p>
       </div>
 
-      <!-- Feature Grid Matrix -->
-      <div class="feature-matrix-grid">
+      <!-- Capability Cards Matrix -->
+      <div class="capability-matrix-grid">
         
-        <div class="matrix-card reveal">
-          <div class="matrix-icon"><i data-lucide="git-branch"></i></div>
-          <h3>The Meat / Making Component Split</h3>
+        <div class="cap-card reveal">
+          <div class="cap-icon-box"><i data-lucide="git-branch"></i></div>
+          <h3>Meat / Making Split Engine</h3>
           <p>
-            In catering, "Mutton Biryani" is rarely bought from a single vendor. Vendor A supplies the 60kg mutton, while Vendor B cooks it in deegs. Vantra splits any dish line into independent vendor assignments with separate delivery schedules and rates.
+            In catering, "Mutton Biryani" is never from one vendor. Vendor A supplies 60kg mutton; Vendor B cooks it into 5 deegs. Vantra routes any dish into independent vendor lines with separate rates and delivery targets.
           </p>
-          <div class="matrix-footer">
-            <span class="pill-code">Unique to Vantra OS</span>
-          </div>
+          <span class="cap-pill font-mono">Patent-Grade Routing</span>
         </div>
 
-        <div class="matrix-card reveal">
-          <div class="matrix-icon"><i data-lucide="receipt"></i></div>
+        <div class="cap-card reveal">
+          <div class="cap-icon-box"><i data-lucide="clock"></i></div>
           <h3>Delayed Billing Architecture</h3>
           <p>
-            Vendors send bills days or weeks post-event. Unlike Odoo which forces early closing, Vantra’s Vendor Sheet holds open an "Awaiting Rates" status without stalling your client invoicing or financial visibility.
+            Vendors drop physical bills weeks post-event. Unlike Odoo which forces early closing, Vantraâ€™s Vendor Sheet holds open an "Awaiting Rates" status without stalling your client invoicing or financial visibility.
           </p>
-          <div class="matrix-footer">
-            <span class="pill-code">FIFO Cost Settlement</span>
-          </div>
+          <span class="cap-pill font-mono">FIFO Cost Settlement</span>
         </div>
 
-        <div class="matrix-card reveal">
-          <div class="matrix-icon"><i data-lucide="landmark"></i></div>
-          <h3>Real Double-Entry Wallet System</h3>
+        <div class="cap-card reveal">
+          <div class="cap-icon-box"><i data-lucide="wallet"></i></div>
+          <h3>Real Double-Entry Wallets</h3>
           <p>
-            Track real liquid money across bank accounts (Meezan, HBL, UBL), mobile wallets (JazzCash, EasyPaisa, Raast, Sadapay), and office petty cash. Every Rupee movement creates an immutable audit trail.
+            Track real liquid money across Meezan Bank, UBL, HBL, JazzCash, EasyPaisa, Raast, and petty cash. Atomic Prisma increment/decrement operations eliminate race conditions and floating balance errors.
           </p>
-          <div class="matrix-footer">
-            <span class="pill-code">Atomic Transactions</span>
-          </div>
+          <span class="cap-pill font-mono">Atomic Writes</span>
         </div>
 
-        <div class="matrix-card reveal">
-          <div class="matrix-icon"><i data-lucide="file-check"></i></div>
+        <div class="cap-card reveal">
+          <div class="cap-icon-box"><i data-lucide="file-check-2"></i></div>
           <h3>Dual-Rate Custom Bills (Decor &amp; Extras)</h3>
           <p>
-            External stage decor, floral arrangements, and sound setups often pass through your company. Vantra records internal cost rates vs. client billing rates with automatic profit markup—while client PDFs strictly hide your margins.
+            External stage decor and sound pass through your company. Vantra tracks internal vendor cost rates vs. client billing rates with automatic profit markupâ€”while client PDFs strictly hide your margins.
           </p>
-          <div class="matrix-footer">
-            <span class="pill-code">Hidden Margin Protection</span>
-          </div>
+          <span class="cap-pill font-mono">Hidden Margin Protection</span>
         </div>
 
-        <div class="matrix-card reveal">
-          <div class="matrix-icon"><i data-lucide="refresh-ccw"></i></div>
+        <div class="cap-card reveal">
+          <div class="cap-icon-box"><i data-lucide="refresh-cw"></i></div>
           <h3>Safe Invoice Diff &amp; Resync</h3>
           <p>
-            Client changes the menu 2 days before the wedding? Changing the client invoice triggers an intelligent diff/merge against the vendor sheet—never wiping out the rates or vendor assignments you already entered.
+            Client changes the menu 2 days before the wedding? Changing the client invoice triggers an intelligent diff/merge against the vendor sheetâ€”never wiping out the rates or vendor assignments already entered.
           </p>
-          <div class="matrix-footer">
-            <span class="pill-code">Optimistic Concurrency</span>
-          </div>
+          <span class="cap-pill font-mono">Optimistic Concurrency</span>
         </div>
 
-        <div class="matrix-card reveal">
-          <div class="matrix-icon"><i data-lucide="shield-alert"></i></div>
-          <h3>Commission Clawback &amp; Audit Log</h3>
+        <div class="cap-card reveal">
+          <div class="cap-icon-box"><i data-lucide="shield-alert"></i></div>
+          <h3>Automated Commission Clawback</h3>
           <p>
-            Sales rep commissions are linked directly to realized invoice settlements. If a booking is cancelled or adjusted, the system automatically claws back the commission allocation with full audit accountability.
+            Sales rep commissions are linked to realized invoice settlements. If a booking is cancelled or adjusted, the system automatically claws back the commission allocation with full audit accountability.
           </p>
-          <div class="matrix-footer">
-            <span class="pill-code">Automated Protection</span>
-          </div>
+          <span class="cap-pill font-mono">Anti-Leakage Safeguard</span>
         </div>
 
       </div>
 
-      <!-- Live System CTA Banner -->
-      <div class="live-system-cta reveal">
-        <div class="live-system-text">
-          <div class="live-indicator">
-            <span class="pulse-circle"></span>
-            <span>PRODUCTION DEPLOYMENT ACTIVE</span>
+      <!-- Live Mayaar Callout Banner -->
+      <div class="live-mayaar-banner reveal">
+        <div class="banner-left">
+          <div class="banner-ping">
+            <span class="ping-circle"></span>
+            <span>PRODUCTION VERCEL CLOUD ACTIVE</span>
           </div>
           <h3>Experience the Live Mayaar Catering System</h3>
           <p>Test the full quotation wizard, vendor sheet engine, real-money wallets, and WhatsApp dispatch workflows live on Vercel.</p>
         </div>
-        <div class="live-system-actions">
-          <a href="https://catering-system-gamma.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-white-glow">
-            <span>Launch Live System</span>
+        <div class="banner-right">
+          <a href="https://catering-system-gamma.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-live-launch">
+            <span>Launch Live System Demo</span>
             <i data-lucide="external-link"></i>
           </a>
         </div>
@@ -631,197 +885,98 @@
     </div>
   </section>
 
-  <!-- Industries & Scaling: Beyond Catering -->
-  <section class="section-padding" id="verticals">
+  <!-- Head-to-Head Comparison: vs Zoho & Odoo -->
+  <section class="section-padding bg-slate-50" id="vs-erps">
     <div class="container">
       
-      <div class="section-title-wrap text-center reveal">
-        <span class="section-eyebrow text-primary"><i data-lucide="globe"></i> Expandable Ecosystem</span>
-        <h2 class="section-heading">One Universal Core. Industry-Specific Workflows.</h2>
-        <p class="section-subtext">
-          Vantra OS isn’t just catering software. It’s an adaptable operational framework for any business that fulfills client commitments through third-party vendors.
+      <div class="section-head-center reveal">
+        <span class="section-pill-tag tag-primary">
+          <i data-lucide="scale"></i> HEAD-TO-HEAD COMPARISON
+        </span>
+        <h2 class="section-main-heading">Why Generic ERPs Fail Vendor Operations</h2>
+        <p class="section-sub-heading">
+          Zoho Books and Odoo are fantastic for accounting firms and retail stores. But when your business runs on date-locked events, delayed paper bills, and external vendors, their generic models collapse.
         </p>
       </div>
 
-      <div class="verticals-grid">
-        
-        <!-- Vertical 1: Catering (Live) -->
-        <div class="vertical-card active-vertical reveal">
-          <div class="vertical-badge bg-success">
-            <i data-lucide="check-circle"></i> LIVE &amp; BATTLE-TESTED
-          </div>
-          <div class="vertical-icon-box bg-orange-subtle"><i data-lucide="utensils" class="text-primary"></i></div>
-          <h3>Catering &amp; Banquets</h3>
-          <p>
-            Per-head pricing, meat/making component splits, deeg tracking, delayed vendor bills, and real-time event gross margins.
-          </p>
-          <ul class="vertical-checklist">
-            <li><i data-lucide="check"></i> Quotation Wizard with AI Quantity Rules</li>
-            <li><i data-lucide="check"></i> Multi-slot meals (Iftar, Sehri, Hi-Tea, Dinner)</li>
-            <li><i data-lucide="check"></i> 1-Click WhatsApp Vendor Work Orders</li>
-          </ul>
-          <div class="vertical-action">
-            <a href="https://catering-system-gamma.vercel.app/" target="_blank" class="link-arrow">
-              Explore Live System <i data-lucide="arrow-right"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Vertical 2: Event Planning -->
-        <div class="vertical-card reveal">
-          <div class="vertical-badge bg-blue-subtle">
-            <i data-lucide="calendar"></i> IN ROADMAP
-          </div>
-          <div class="vertical-icon-box bg-blue-subtle"><i data-lucide="sparkles" class="text-accent"></i></div>
-          <h3>Event Planning &amp; Production</h3>
-          <p>
-            Coordinate sound engineers, floral designers, venue security, and lighting specialists on a single synchronized timeline.
-          </p>
-          <ul class="vertical-checklist">
-            <li><i data-lucide="check"></i> Multi-vendor timeline dispatch</li>
-            <li><i data-lucide="check"></i> Dual-rate decor markups</li>
-            <li><i data-lucide="check"></i> Client moodboards &amp; approval portal</li>
-          </ul>
-          <div class="vertical-action">
-            <span class="text-muted text-sm">Target Pilot: Q4 2026</span>
-          </div>
-        </div>
-
-        <!-- Vertical 3: Rentals & Marquees -->
-        <div class="vertical-card reveal">
-          <div class="vertical-badge bg-purple-subtle">
-            <i data-lucide="package"></i> IN ROADMAP
-          </div>
-          <div class="vertical-icon-box bg-purple-subtle"><i data-lucide="home" class="text-purple"></i></div>
-          <h3>Equipment &amp; Marquee Rentals</h3>
-          <p>
-            Track sub-rented generators, furniture sets, Crockery deegs, and staging structures with automatic damage deposit ledgers.
-          </p>
-          <ul class="vertical-checklist">
-            <li><i data-lucide="check"></i> Sub-vendor cross-hire management</li>
-            <li><i data-lucide="check"></i> Security deposit refund workflows</li>
-            <li><i data-lucide="check"></i> Cartage &amp; transport reconciliation</li>
-          </ul>
-          <div class="vertical-action">
-            <span class="text-muted text-sm">Target Pilot: Q1 2027</span>
-          </div>
-        </div>
-
-        <!-- Vertical 4: Project Supply -->
-        <div class="vertical-card reveal">
-          <div class="vertical-badge bg-amber-subtle">
-            <i data-lucide="truck"></i> IN ROADMAP
-          </div>
-          <div class="vertical-icon-box bg-amber-subtle"><i data-lucide="hard-hat" class="text-amber"></i></div>
-          <h3>Turnkey Supply &amp; Fitouts</h3>
-          <p>
-            Commercial fitouts and turnkey procurement where materials are sourced across distributed vendors and billed as a project.
-          </p>
-          <ul class="vertical-checklist">
-            <li><i data-lucide="check"></i> Milestone-based client invoicing</li>
-            <li><i data-lucide="check"></i> Contractor retention money holds</li>
-            <li><i data-lucide="check"></i> Job-site delivery verification</li>
-          </ul>
-          <div class="vertical-action">
-            <span class="text-muted text-sm">Target Pilot: Q2 2027</span>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Head-to-Head Comparison: Vantra OS vs Odoo & Zoho -->
-  <section class="section-padding bg-slate-subtle" id="comparison">
-    <div class="container">
-      
-      <div class="section-title-wrap text-center reveal">
-        <span class="section-eyebrow text-primary"><i data-lucide="scale"></i> Head-to-Head Analysis</span>
-        <h2 class="section-heading">Why Generic ERPs Fail Vendor-Reliant Businesses</h2>
-        <p class="section-subtext">
-          Zoho Books and Odoo are fantastic for accountants and retail shops. But when your business runs on date-locked events and external vendors, their generic models collapse.
-        </p>
-      </div>
-
-      <div class="comparison-table-wrapper reveal">
-        <table class="comparison-table">
+      <div class="comparison-card-wrapper reveal">
+        <table class="vantra-table">
           <thead>
             <tr>
-              <th class="col-feature">Operational Capability</th>
-              <th class="col-other">Zoho Books</th>
-              <th class="col-other">Odoo ERP</th>
-              <th class="col-vantra highlight-col">
-                <div class="th-brand">
-                  <span>VANTRA OS</span>
-                  <span class="th-badge">Built For Purpose</span>
+              <th class="col-cap">Core Operational Requirement</th>
+              <th class="col-erps">Zoho Books</th>
+              <th class="col-erps">Odoo ERP</th>
+              <th class="col-vantra-brand">
+                <div class="table-brand-tag">
+                  <strong>VANTRA OS</strong>
+                  <span>Purpose-Built</span>
                 </div>
               </th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="feature-title">
+              <td class="td-feature">
                 <strong>Vendor Sheet Engine</strong>
-                <span class="feature-desc">Per-event internal planning document mapping 1:1 with invoice</span>
+                <span>Internal per-event cost planning document mapping 1:1 to invoice</span>
               </td>
-              <td><i data-lucide="x" class="text-danger"></i> None</td>
-              <td><i data-lucide="x" class="text-danger"></i> Requires heavy custom modules</td>
-              <td class="highlight-col"><i data-lucide="check" class="text-success"></i> <strong>Core Native Module</strong></td>
+              <td><span class="table-badge-no"><i data-lucide="x"></i> None</span></td>
+              <td><span class="table-badge-no"><i data-lucide="x"></i> Requires custom code</span></td>
+              <td class="td-vantra"><span class="table-badge-yes"><i data-lucide="check"></i> <strong>Core Native Module</strong></span></td>
             </tr>
             <tr>
-              <td class="feature-title">
-                <strong>Component Split (Meat vs Making)</strong>
-                <span class="feature-desc">Routing dish materials to multiple vendors automatically</span>
+              <td class="td-feature">
+                <strong>Meat / Making Component Split</strong>
+                <span>Splitting a single dish to different supply &amp; cooking vendors</span>
               </td>
-              <td><i data-lucide="x" class="text-danger"></i> Not possible</td>
-              <td><i data-lucide="x" class="text-danger"></i> Assumes manufacturing BOM</td>
-              <td class="highlight-col"><i data-lucide="check" class="text-success"></i> <strong>Built-in 1-Click Split</strong></td>
+              <td><span class="table-badge-no"><i data-lucide="x"></i> Not possible</span></td>
+              <td><span class="table-badge-no"><i data-lucide="x"></i> Assumes manufacturing plant</span></td>
+              <td class="td-vantra"><span class="table-badge-yes"><i data-lucide="check"></i> <strong>1-Click Component Split</strong></span></td>
             </tr>
             <tr>
-              <td class="feature-title">
+              <td class="td-feature">
                 <strong>Delayed Billing Reconciliation</strong>
-                <span class="feature-desc">Accepting vendor bills weeks after delivery without closing events</span>
+                <span>Keeping orders open for paper bills arriving weeks later</span>
               </td>
-              <td><i data-lucide="x" class="text-danger"></i> Bills must be entered promptly</td>
-              <td><i data-lucide="x" class="text-danger"></i> No "pending rates" status</td>
-              <td class="highlight-col"><i data-lucide="check" class="text-success"></i> <strong>First-Class Architecture</strong></td>
+              <td><span class="table-badge-no"><i data-lucide="x"></i> Bills must be entered promptly</span></td>
+              <td><span class="table-badge-no"><i data-lucide="x"></i> No "pending rates" state</span></td>
+              <td class="td-vantra"><span class="table-badge-yes"><i data-lucide="check"></i> <strong>First-Class Architecture</strong></span></td>
             </tr>
             <tr>
-              <td class="feature-title">
-                <strong>WhatsApp Zero-Friction Dispatch</strong>
-                <span class="feature-desc">Dispatches work orders directly to vendors without exposing prices</span>
+              <td class="td-feature">
+                <strong>1-Click WhatsApp Work Orders</strong>
+                <span>Direct dispatch to vendors with Google Maps pins, zero price leak</span>
               </td>
-              <td><i data-lucide="x" class="text-danger"></i> Email only / 3rd party plugin</td>
-              <td><i data-lucide="x" class="text-danger"></i> Requires expensive API plugin</td>
-              <td class="highlight-col"><i data-lucide="check" class="text-success"></i> <strong>Native 1-Click Format</strong></td>
+              <td><span class="table-badge-no"><i data-lucide="x"></i> Email only / paid addon</span></td>
+              <td><span class="table-badge-no"><i data-lucide="x"></i> Expensive API plugin required</span></td>
+              <td class="td-vantra"><span class="table-badge-yes"><i data-lucide="check"></i> <strong>Native &amp; Free</strong></span></td>
             </tr>
             <tr>
-              <td class="feature-title">
+              <td class="td-feature">
                 <strong>Instant Event-Level Profit &amp; Loss</strong>
-                <span class="feature-desc">Calculates gross &amp; net margin per specific booking</span>
+                <span>Realized gross margin per booking before midnight</span>
               </td>
-              <td><i data-lucide="x" class="text-danger"></i> Period-level only (monthly)</td>
-              <td><i data-lucide="minus" class="text-amber"></i> Complex project accounting</td>
-              <td class="highlight-col"><i data-lucide="check" class="text-success"></i> <strong>Real-time Event Dossier</strong></td>
+              <td><span class="table-badge-no"><i data-lucide="x"></i> Period-level only (monthly)</span></td>
+              <td><span class="table-badge-partial"><i data-lucide="minus"></i> Complex project accounting</span></td>
+              <td class="td-vantra"><span class="table-badge-yes"><i data-lucide="check"></i> <strong>Real-Time Per Event</strong></span></td>
             </tr>
             <tr>
-              <td class="feature-title">
-                <strong>Multi-Bank Liquid Wallets</strong>
-                <span class="feature-desc">Meezan, HBL, JazzCash, EasyPaisa, Cash with double-entry safety</span>
+              <td class="td-feature">
+                <strong>Multi-Bank Double-Entry Wallets</strong>
+                <span>Meezan, HBL, JazzCash, EasyPaisa, Petty Cash</span>
               </td>
-              <td><i data-lucide="minus" class="text-amber"></i> Single bank ledger per txn</td>
-              <td><i data-lucide="minus" class="text-amber"></i> Standard Chart of Accounts</td>
-              <td class="highlight-col"><i data-lucide="check" class="text-success"></i> <strong>Atomic Wallet Ledger</strong></td>
+              <td><span class="table-badge-partial"><i data-lucide="minus"></i> Single bank ledger</span></td>
+              <td><span class="table-badge-partial"><i data-lucide="minus"></i> Standard Chart of Accounts</span></td>
+              <td class="td-vantra"><span class="table-badge-yes"><i data-lucide="check"></i> <strong>Atomic Multi-Wallet Engine</strong></span></td>
             </tr>
             <tr>
-              <td class="feature-title">
-                <strong>Setup Time to Production</strong>
-                <span class="feature-desc">Time required before your operations team is live</span>
+              <td class="td-feature">
+                <strong>Deployment &amp; Onboarding Time</strong>
+                <span>Time until your operations team is live with real vendors</span>
               </td>
-              <td>3–6 Weeks (Configuration)</td>
-              <td>8–16 Weeks (Implementation)</td>
-              <td class="highlight-col"><strong>48 Hours (Assisted Onboarding)</strong></td>
+              <td>3â€“6 Weeks (Configuration)</td>
+              <td>8â€“16 Weeks (Implementation)</td>
+              <td class="td-vantra"><strong>48 Hours (Assisted Setup)</strong></td>
             </tr>
           </tbody>
         </table>
@@ -830,101 +985,178 @@
     </div>
   </section>
 
-  <!-- Interactive ROI & Margin Calculator -->
-  <section class="section-padding" id="roi-calc">
+  <!-- Future Industry Verticals -->
+  <section class="section-padding" id="verticals">
     <div class="container">
       
-      <div class="roi-container reveal">
-        <div class="roi-left">
-          <span class="section-eyebrow text-primary"><i data-lucide="calculator"></i> Financial Impact</span>
-          <h2 class="roi-title">Calculate How Much Money Your Operations Are Leaking</h2>
-          <p class="roi-desc">
-            Between unrecorded vendor adjustments, forgotten cartage fees, and delayed bill surprises, the average catering or event business loses <strong>8% to 15% of their gross profit</strong>.
+      <div class="section-head-center reveal">
+        <span class="section-pill-tag tag-primary">
+          <i data-lucide="globe"></i> EXPANDABLE ECOSYSTEM
+        </span>
+        <h2 class="section-main-heading">One Core. Endless Vendor Verticals.</h2>
+        <p class="section-sub-heading">
+          Catering was our proving ground. The exact same coordination mechanics power event planners, marquee rentals, and commercial fitouts.
+        </p>
+      </div>
+
+      <div class="verticals-cards-grid">
+        
+        <!-- Vertical 1: Catering -->
+        <div class="v-card active-v reveal">
+          <div class="v-badge bg-emerald-soft text-emerald"><i data-lucide="check-circle-2"></i> LIVE IN KARACHI</div>
+          <div class="v-icon bg-orange-soft"><i data-lucide="utensils" class="text-orange"></i></div>
+          <h3>Catering &amp; Banquets</h3>
+          <p>Per-head pricing, meat/making dish splits, deeg tracking, delayed vendor bills, and real-time event gross margins.</p>
+          <ul class="v-check-list">
+            <li><i data-lucide="check"></i> AI Headcount Quantity Rules</li>
+            <li><i data-lucide="check"></i> 14 Catering-Native Units (deeg, kg)</li>
+            <li><i data-lucide="check"></i> 1-Click WhatsApp Vendor Work Orders</li>
+          </ul>
+          <a href="https://catering-system-gamma.vercel.app/" target="_blank" class="v-link">
+            Launch Live Mayaar Demo <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Vertical 2: Event Production -->
+        <div class="v-card reveal">
+          <div class="v-badge bg-blue-soft text-blue"><i data-lucide="calendar"></i> NEXT PILOT (Q4 2026)</div>
+          <div class="v-icon bg-blue-soft"><i data-lucide="sparkles" class="text-blue"></i></div>
+          <h3>Event Planning &amp; Decor</h3>
+          <p>Coordinate stage designers, floral vendors, sound engineers, and venue security on a single synchronized timeline.</p>
+          <ul class="v-check-list">
+            <li><i data-lucide="check"></i> Multi-vendor timeline dispatch</li>
+            <li><i data-lucide="check"></i> Dual-rate decor markups</li>
+            <li><i data-lucide="check"></i> Client tokenized moodboards</li>
+          </ul>
+          <span class="v-status-note">Pilots Starting Soon</span>
+        </div>
+
+        <!-- Vertical 3: Rentals -->
+        <div class="v-card reveal">
+          <div class="v-badge bg-purple-soft text-purple"><i data-lucide="package"></i> ROADMAP (Q1 2027)</div>
+          <div class="v-icon bg-purple-soft"><i data-lucide="home" class="text-purple"></i></div>
+          <h3>Marquee &amp; Equipment Rentals</h3>
+          <p>Track sub-rented generators, furniture sets, Crockery deegs, and staging structures with automatic damage deposit ledgers.</p>
+          <ul class="v-check-list">
+            <li><i data-lucide="check"></i> Sub-vendor cross-hire tracking</li>
+            <li><i data-lucide="check"></i> Damage deposit reconciliation</li>
+            <li><i data-lucide="check"></i> Cartage &amp; transport ledgers</li>
+          </ul>
+          <span class="v-status-note">In Architecture Phase</span>
+        </div>
+
+        <!-- Vertical 4: Fitouts -->
+        <div class="v-card reveal">
+          <div class="v-badge bg-amber-soft text-amber"><i data-lucide="truck"></i> ROADMAP (Q2 2027)</div>
+          <div class="v-icon bg-amber-soft"><i data-lucide="hard-hat" class="text-amber"></i></div>
+          <h3>Turnkey Supply &amp; Fitouts</h3>
+          <p>Commercial fitouts and procurement where materials are sourced across distributed vendors and billed as a project milestone.</p>
+          <ul class="v-check-list">
+            <li><i data-lucide="check"></i> Milestone client invoicing</li>
+            <li><i data-lucide="check"></i> Contractor retention money holds</li>
+            <li><i data-lucide="check"></i> Site delivery verification</li>
+          </ul>
+          <span class="v-status-note">In Architecture Phase</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive ROI & Margin Leakage Calculator -->
+  <section class="section-padding bg-slate-50" id="roi-calc">
+    <div class="container">
+      
+      <div class="roi-wrapper reveal">
+        
+        <div class="roi-form-side">
+          <span class="section-pill-tag tag-primary"><i data-lucide="calculator"></i> FINANCIAL IMPACT AUDIT</span>
+          <h2 class="roi-main-title">Calculate How Much Profit Your Operations Are Leaking</h2>
+          <p class="roi-lead-text">
+            Between unrecorded vendor adjustments, forgotten cartage fees, and delayed bill surprises, the average vendor-reliant business loses <strong>8% to 15% of their net margin</strong>.
           </p>
 
-          <div class="slider-control-group">
-            <div class="slider-header">
-              <label for="eventsRange">Events / Orders per Month:</label>
-              <span class="slider-val" id="eventsCountVal">25 Events</span>
+          <div class="roi-slider-block">
+            <div class="roi-slider-meta">
+              <label for="eventsRange">Bookings / Events Per Month:</label>
+              <span class="slider-badge" id="eventsCountVal">25 Events</span>
             </div>
-            <input type="range" id="eventsRange" min="5" max="100" value="25" step="1" class="custom-slider">
+            <input type="range" id="eventsRange" min="5" max="100" value="25" step="1" class="roi-range-slider">
           </div>
 
-          <div class="slider-control-group">
-            <div class="slider-header">
-              <label for="avgRevenueRange">Average Event Revenue (PKR):</label>
-              <span class="slider-val" id="avgRevenueVal">PKR 850,000</span>
+          <div class="roi-slider-block">
+            <div class="roi-slider-meta">
+              <label for="avgRevenueRange">Average Booking Value (PKR):</label>
+              <span class="slider-badge" id="avgRevenueVal">PKR 850,000</span>
             </div>
-            <input type="range" id="avgRevenueRange" min="200000" max="3000000" value="850000" step="50000" class="custom-slider">
+            <input type="range" id="avgRevenueRange" min="200000" max="3000000" value="850000" step="50000" class="roi-range-slider">
           </div>
 
-          <div class="slider-control-group">
-            <div class="slider-header">
-              <label for="vendorsRange">Average Vendors per Event:</label>
-              <span class="slider-val" id="vendorsVal">6 Vendors</span>
+          <div class="roi-slider-block">
+            <div class="roi-slider-meta">
+              <label for="vendorsRange">Average Vendors Per Order:</label>
+              <span class="slider-badge" id="vendorsVal">6 Vendors</span>
             </div>
-            <input type="range" id="vendorsRange" min="2" max="20" value="6" step="1" class="custom-slider">
+            <input type="range" id="vendorsRange" min="2" max="20" value="6" step="1" class="roi-range-slider">
           </div>
         </div>
 
-        <div class="roi-right">
-          <div class="roi-results-card">
-            <div class="roi-card-header">
-              <i data-lucide="trending-up" class="text-success"></i>
-              <span>Projected Monthly Recovery</span>
+        <div class="roi-result-side">
+          <div class="roi-dark-card">
+            <div class="roi-card-top">
+              <i data-lucide="trending-up" class="text-emerald"></i>
+              <span>Projected Bottom-Line Recovery</span>
             </div>
 
-            <div class="roi-kpi-main">
-              <span class="kpi-label">Estimated Monthly Margin Recovered</span>
-              <h3 class="kpi-number text-success" id="leakageRecoveredVal">PKR 1,062,500</h3>
-              <span class="kpi-sub">Saved through precise vendor reconciliation and rate locking</span>
+            <div class="roi-big-kpi">
+              <span class="kpi-title">Monthly Margin Protected</span>
+              <h3 class="kpi-amount text-emerald font-mono" id="leakageRecoveredVal">PKR 1,062,500</h3>
+              <span class="kpi-caption">Recovered through strict rate-locking and FIFO reconciliation</span>
             </div>
 
-            <div class="roi-breakdown-list">
-              <div class="breakdown-item">
+            <div class="roi-details-list">
+              <div class="roi-detail-row">
                 <span>Coordination Hours Saved:</span>
-                <strong id="hoursSavedVal">150 hrs / mo</strong>
+                <strong id="hoursSavedVal" class="font-mono text-white">150 hrs / mo</strong>
               </div>
-              <div class="breakdown-item">
-                <span>Vendor Overbillings Prevented:</span>
-                <strong id="overbillingVal">PKR 382,500</strong>
+              <div class="roi-detail-row">
+                <span>Vendor Overcharges Prevented:</span>
+                <strong id="overbillingVal" class="font-mono text-white">PKR 382,500</strong>
               </div>
-              <div class="breakdown-item">
-                <span>Delayed Bill Profit Protection:</span>
-                <strong id="delayedProtectedVal">PKR 680,000</strong>
+              <div class="roi-detail-row">
+                <span>Delayed Bill Margin Protected:</span>
+                <strong id="delayedProtectedVal" class="font-mono text-white">PKR 680,000</strong>
               </div>
             </div>
 
-            <div class="roi-card-action">
-              <a href="#early-access" class="btn btn-primary w-100">
-                Stop The Leakage · Claim Early Access
-              </a>
-            </div>
+            <a href="#early-access" class="btn btn-hero-cta w-100">
+              Stop The Leakage Â· Claim Early Access
+            </a>
           </div>
         </div>
+
       </div>
 
     </div>
   </section>
 
   <!-- Social Proof & Customer Spotlight -->
-  <section class="section-padding bg-slate-subtle">
+  <section class="section-padding">
     <div class="container">
       
-      <div class="testimonial-card reveal">
-        <div class="testimonial-quote-icon">“</div>
-        <div class="testimonial-content">
-          <p class="testimonial-quote">
-            "Before Vantra OS, our team would spend until 2 AM cross-checking WhatsApp voice notes, handwritten vendor receipts, and multiple Excel sheets to figure out if we actually made a profit on a 1,000-person wedding. Now, our vendor sheets auto-generate from the quote, our cooks receive their delivery targets in 1 click, and our books balance every morning."
+      <div class="spotlight-card reveal">
+        <div class="spotlight-quote-mark">â€œ</div>
+        <div class="spotlight-inner">
+          <p class="spotlight-text">
+            "Before Vantra OS, our team would spend until 2 AM cross-checking WhatsApp voice notes, handwritten vendor receipts, and multiple Excel sheets to figure out if we actually made a profit on an 800-person wedding. Now, our vendor sheets auto-generate from the quote, our cooks receive their delivery targets in 1 click, and our books balance every morning."
           </p>
-          <div class="testimonial-author">
-            <div class="author-avatar">
-              <span>MY</span>
-            </div>
-            <div class="author-details">
-              <strong>Operating Team</strong>
-              <span>Mayaar Premium Catering · Karachi</span>
-              <span class="author-badge">Daily Production User</span>
+          <div class="spotlight-author-wrap">
+            <div class="spotlight-avatar">MY</div>
+            <div class="spotlight-meta">
+              <strong>Operations Leadership</strong>
+              <span>Mayaar Premium Catering Â· Karachi</span>
+              <span class="spotlight-verified-badge"><i data-lucide="check-circle-2"></i> Daily Production User</span>
             </div>
           </div>
         </div>
@@ -933,124 +1165,128 @@
     </div>
   </section>
 
-  <!-- Early Access / Waitlist & Contact Form Section -->
-  <section class="section-padding" id="early-access">
+  <!-- Early Access / Waitlist Application Section -->
+  <section class="section-padding bg-slate-50" id="early-access">
     <div class="container">
       
-      <div class="early-access-grid">
+      <div class="early-access-layout">
         
-        <div class="early-access-info reveal">
-          <span class="section-eyebrow text-primary"><i data-lucide="rocket"></i> Limited Pilot Access</span>
-          <h2 class="section-heading">Ready to Run Your Vendor Operations With Surgical Precision?</h2>
-          <p class="section-subtext">
-            We onboard businesses hand-in-hand. Our deployment engineers personally set up your vendor accounts, unit matrices, and custom workflow presets within 48 hours.
+        <div class="ea-info-side reveal">
+          <span class="section-pill-tag tag-primary"><i data-lucide="rocket"></i> EARLY ACCESS PILOT</span>
+          <h2 class="ea-main-heading">Run Your Vendor Operations With Surgical Precision</h2>
+          <p class="ea-lead">
+            We onboard businesses hand-in-hand. Our deployment team personally sets up your vendor accounts, unit formulas, and wallet balances within 48 hours.
           </p>
 
-          <div class="benefits-stack">
-            <div class="benefit-item">
-              <div class="benefit-icon"><i data-lucide="check"></i></div>
+          <div class="ea-benefits-list">
+            <div class="ea-benefit">
+              <div class="ea-b-icon"><i data-lucide="check"></i></div>
               <div>
-                <strong>Guaranteed Onboarding Support</strong>
+                <strong>Guaranteed Assisted Onboarding</strong>
                 <p>We configure your real vendors, dishes, and bank wallets for you.</p>
               </div>
             </div>
-            <div class="benefit-item">
-              <div class="benefit-icon"><i data-lucide="check"></i></div>
+            <div class="ea-benefit">
+              <div class="ea-b-icon"><i data-lucide="check"></i></div>
               <div>
                 <strong>Zero Downtime Transition</strong>
-                <p>Migrate your active orders without skipping a single delivery.</p>
+                <p>Migrate active bookings without missing a single delivery.</p>
               </div>
             </div>
-            <div class="benefit-item">
-              <div class="benefit-icon"><i data-lucide="check"></i></div>
+            <div class="ea-benefit">
+              <div class="ea-b-icon"><i data-lucide="check"></i></div>
               <div>
                 <strong>Direct Founder Engineering Channel</strong>
-                <p>Direct WhatsApp access to the core engineering team.</p>
+                <p>Direct WhatsApp access to our core systems engineering team.</p>
               </div>
             </div>
           </div>
 
-          <div class="direct-contact-box">
-            <span>Prefer an immediate conversation?</span>
-            <a href="https://wa.me/923332839452?text=Hi%20Vantra%20OS!%20I'm%20interested%20in%20deploying%20the%20system%20for%20my%20business." target="_blank" class="contact-link">
-              <i data-lucide="message-circle" class="text-success"></i>
+          <div class="direct-wa-box">
+            <span>Want to speak to a systems architect right now?</span>
+            <a href="https://wa.me/923332839452?text=Hi%20Vantra%20OS!%20I'm%20interested%20in%20deploying%20the%20system%20for%20my%20business." target="_blank" class="direct-wa-link">
+              <i data-lucide="message-circle" class="text-emerald"></i>
               <strong>WhatsApp: +92 333 2839452</strong>
             </a>
           </div>
         </div>
 
-        <div class="early-access-form-card reveal">
-          <div class="form-header">
-            <h3>Request Early Access Pilot</h3>
-            <p>Fill out this quick assessment and we'll schedule a tailored demo.</p>
-          </div>
-
-          <form id="waitlistForm" class="vantra-form">
-            <div class="form-group">
-              <label for="fullName">Your Name *</label>
-              <input type="text" id="fullName" name="fullName" placeholder="e.g. Saad Shamsi" required>
+        <div class="ea-form-side reveal">
+          <div class="ea-form-card">
+            
+            <div class="ea-form-head">
+              <h3>Request Early Access Pilot</h3>
+              <p>Fill out this brief assessment and our team will prepare a tailored walkthrough.</p>
             </div>
 
-            <div class="form-group">
-              <label for="businessName">Business / Brand Name *</label>
-              <input type="text" id="businessName" name="businessName" placeholder="e.g. Royal Marquee &amp; Catering" required>
-            </div>
-
-            <div class="form-row">
+            <form id="waitlistForm" class="vantra-intake-form">
               <div class="form-group">
-                <label for="industry">Industry Sector *</label>
-                <select id="industry" name="industry" required>
-                  <option value="Catering & Banquets">Catering &amp; Banquets</option>
-                  <option value="Event Planning & Decor">Event Planning &amp; Decor</option>
-                  <option value="Equipment & Marquee Rentals">Equipment &amp; Marquee Rentals</option>
-                  <option value="Wholesale Supply & Cartage">Wholesale Supply &amp; Cartage</option>
-                  <option value="Other Vendor Business">Other Vendor-Driven Business</option>
+                <label for="fullName">Your Name *</label>
+                <input type="text" id="fullName" name="fullName" placeholder="e.g. Saad Shamsi" required>
+              </div>
+
+              <div class="form-group">
+                <label for="businessName">Business / Brand Name *</label>
+                <input type="text" id="businessName" name="businessName" placeholder="e.g. Royal Marquee &amp; Catering" required>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="industry">Industry Sector *</label>
+                  <select id="industry" name="industry" required>
+                    <option value="Catering & Banquets">Catering &amp; Banquets</option>
+                    <option value="Event Planning & Decor">Event Planning &amp; Decor</option>
+                    <option value="Equipment & Marquee Rentals">Equipment &amp; Marquee Rentals</option>
+                    <option value="Wholesale Supply & Cartage">Wholesale Supply &amp; Cartage</option>
+                    <option value="Other Vendor Business">Other Vendor-Driven Business</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="city">City *</label>
+                  <input type="text" id="city" name="city" placeholder="e.g. Karachi / Lahore" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="whatsapp">WhatsApp Number *</label>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="e.g. 0333 1234567" required>
+              </div>
+
+              <div class="form-group">
+                <label for="eventsPerMonth">Approximate Monthly Bookings</label>
+                <select id="eventsPerMonth" name="eventsPerMonth">
+                  <option value="1-5">1 â€“ 5 bookings / month</option>
+                  <option value="6-15" selected>6 â€“ 15 bookings / month</option>
+                  <option value="16-35">16 â€“ 35 bookings / month</option>
+                  <option value="35+">35+ bookings / month (High Volume)</option>
                 </select>
               </div>
+
               <div class="form-group">
-                <label for="city">City *</label>
-                <input type="text" id="city" name="city" placeholder="e.g. Karachi / Lahore" required>
+                <label for="biggestPain">What's your biggest operational bottleneck?</label>
+                <textarea id="biggestPain" name="biggestPain" rows="2" placeholder="e.g. Lost WhatsApp revisions, delayed vendor bills, blind cashflow..."></textarea>
               </div>
+
+              <button type="submit" class="btn btn-hero-cta w-100" id="submitBtn">
+                <span>Submit Early Access Request</span>
+                <i data-lucide="send"></i>
+              </button>
+              
+              <p class="form-confidential-note">
+                <i data-lucide="shield"></i> Your operational data is strictly confidential. Zero spam.
+              </p>
+            </form>
+
+            <!-- Success State -->
+            <div id="formSuccess" class="form-success-card" style="display: none;">
+              <div class="success-check-icon"><i data-lucide="check-circle-2"></i></div>
+              <h4>You're On The Priority List!</h4>
+              <p>Thank you for applying. A solutions architect is reviewing your operational intake and will message you directly on WhatsApp within 12 hours.</p>
+              <a href="https://wa.me/923332839452" target="_blank" class="btn btn-hero-whatsapp mt-3">
+                <i data-lucide="message-circle"></i> Fast-Track via WhatsApp
+              </a>
             </div>
 
-            <div class="form-group">
-              <label for="whatsapp">WhatsApp Number *</label>
-              <input type="tel" id="whatsapp" name="whatsapp" placeholder="e.g. 0333 1234567" required>
-            </div>
-
-            <div class="form-group">
-              <label for="eventsPerMonth">Approximate Monthly Events / Orders</label>
-              <select id="eventsPerMonth" name="eventsPerMonth">
-                <option value="1-5">1 – 5 events / month</option>
-                <option value="6-15" selected>6 – 15 events / month</option>
-                <option value="16-35">16 – 35 events / month</option>
-                <option value="35+">35+ events / month (High Volume)</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="biggestPain">What's your biggest operational bottleneck?</label>
-              <textarea id="biggestPain" name="biggestPain" rows="2" placeholder="e.g. Disconnected vendor rates, WhatsApp chaos, delayed invoices..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-submit w-100" id="submitBtn">
-              <span>Submit Early Access Request</span>
-              <i data-lucide="send"></i>
-            </button>
-            
-            <p class="form-privacy">
-              <i data-lucide="shield"></i> Your information is strictly confidential. Zero spam.
-            </p>
-          </form>
-
-          <!-- Success State -->
-          <div id="formSuccess" class="form-success-box" style="display: none;">
-            <div class="success-icon"><i data-lucide="check-circle-2"></i></div>
-            <h4>You're On The Priority List!</h4>
-            <p>Thank you for requesting early access. Our solutions architect will review your operational requirements and message you directly on WhatsApp within 12 hours.</p>
-            <a href="https://wa.me/923332839452?text=Hi%20Vantra%20OS!%20I%20just%20submitted%20the%20early%20access%20form%20for%20my%20business." target="_blank" class="btn btn-outline mt-3">
-              Fast-Track on WhatsApp <i data-lucide="arrow-right"></i>
-            </a>
           </div>
         </div>
 
@@ -1060,67 +1296,67 @@
   </section>
 
   <!-- Sticky Floating WhatsApp Bubble -->
-  <a href="https://wa.me/923332839452?text=Hello%20Vantra%20OS%20team,%20I'd%20like%20to%20learn%20more%20about%20your%20system." target="_blank" rel="noopener noreferrer" class="floating-wa-bubble" aria-label="Chat on WhatsApp">
-    <div class="wa-bubble-inner">
+  <a href="https://wa.me/923332839452?text=Hello%20Vantra%20OS%20team,%20I'd%20like%20to%20learn%20more%20about%20your%20system." target="_blank" rel="noopener noreferrer" class="floating-wa-btn" aria-label="Chat directly on WhatsApp">
+    <div class="wa-btn-pill">
       <i data-lucide="message-circle"></i>
-      <span class="wa-tooltip">Direct WhatsApp: 0333 2839452</span>
+      <span class="wa-btn-text">WhatsApp 0333 2839452</span>
     </div>
   </a>
 
   <!-- Global Footer -->
   <footer class="main-footer">
-    <div class="container footer-container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="#hero" class="brand-logo">
+    <div class="container footer-inner">
+      <div class="footer-top-row">
+        <div class="footer-brand-col">
+          <a href="#hero" class="brand-logo footer-logo">
             <div class="logo-mark">
               <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="40" height="40" rx="10" fill="#EA580C"/>
                 <path d="M11 13L20 28L29 13" stroke="white" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
-            <span class="brand-name">VANTRA<span>OS</span></span>
+            <span class="brand-title text-white">VANTRA<span>OS</span></span>
           </a>
-          <p class="footer-tagline">
+          <p class="footer-bio">
             Your order. Every vendor. One view.<br>
-            Industry-specific operating software for businesses that deliver through vendors.
+            The dedicated operating system for businesses that deliver through distributed vendors.
           </p>
-          <div class="domain-badge">
+          <div class="domain-pill">
             <i data-lucide="globe"></i> vantraos.com
           </div>
         </div>
 
-        <div class="footer-nav-columns">
-          <div class="footer-col">
+        <div class="footer-links-grid">
+          <div class="footer-links-col">
             <h5>Product</h5>
-            <a href="https://catering-system-gamma.vercel.app/" target="_blank">Live Catering System ↗</a>
+            <a href="https://catering-system-gamma.vercel.app/" target="_blank">Live Mayaar System â†—</a>
             <a href="#workflow">Vendor Sheet Engine</a>
-            <a href="#workflow">Real-Money Wallets</a>
-            <a href="#workflow">WhatsApp Automation</a>
-            <a href="#comparison">vs Zoho Books &amp; Odoo</a>
+            <a href="#workflow">Multi-Bank Wallets</a>
+            <a href="#workflow">WhatsApp Work Orders</a>
+            <a href="#vs-erps">vs Zoho Books &amp; Odoo</a>
           </div>
 
-          <div class="footer-col">
-            <h5>Future Verticals</h5>
-            <a href="#verticals">Catering (Live)</a>
-            <a href="#verticals">Event Planning</a>
+          <div class="footer-links-col">
+            <h5>Verticals</h5>
+            <a href="#verticals">Catering &amp; Banquets</a>
+            <a href="#verticals">Event Planning &amp; Decor</a>
             <a href="#verticals">Equipment Rentals</a>
-            <a href="#verticals">Turnkey Supply</a>
+            <a href="#verticals">Turnkey Project Supply</a>
           </div>
 
-          <div class="footer-col">
+          <div class="footer-links-col">
             <h5>Direct Contact</h5>
             <a href="https://wa.me/923332839452" target="_blank">WhatsApp: 0333 2839452</a>
-            <span class="footer-contact-item">Karachi, Pakistan</span>
-            <span class="footer-contact-item">RPDU Cohort 2 / Phase II</span>
+            <span class="footer-meta-item">Karachi, Pakistan</span>
+            <span class="footer-meta-item">RPDU Cohort 2 / Phase II</span>
           </div>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2026 Vantra OS (vantraos.com). All rights reserved.</p>
-        <div class="footer-legal">
-          <span>Purpose-Built SaaS for Vendor Commerce</span>
+      <div class="footer-bottom-row">
+        <p>&copy; 2026 Vantra OS (vantraos.com). Built for vendor-driven commerce.</p>
+        <div class="footer-safe-badge">
+          <span>853 Automated Tests Â· ACID Safe</span>
         </div>
       </div>
     </div>
@@ -1129,3 +1365,6 @@
   <script src="app.js"></script>
 </body>
 </html>
+
+
+
